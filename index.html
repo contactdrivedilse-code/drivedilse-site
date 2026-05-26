@@ -382,6 +382,80 @@ footer{background:#fffbe6;border-top:1.5px solid rgba(201,160,16,.25);padding:40
   .hero-inner{padding:72px 16px 52px}
   .cta-band-title{font-size:1.7rem}
 }
+
+/* ============================================================
+   PREMIUM LAYER — warm gold, no dark colors
+   ============================================================ */
+
+/* Selection highlight */
+::selection{background:rgba(245,197,24,.45);color:#3a2c00}
+
+/* Glassmorphism header */
+.hdr{background:rgba(255,255,255,.82) !important;backdrop-filter:blur(18px) saturate(160%);-webkit-backdrop-filter:blur(18px) saturate(160%);box-shadow:0 2px 24px rgba(200,160,0,.10),0 1px 0 rgba(245,197,24,.18) !important}
+
+/* Hero — soft dot-grid texture */
+.hero{background:linear-gradient(135deg,#fffde8 0%,#fff9d0 40%,#fffef5 100%) !important;position:relative}
+.hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(circle,rgba(201,160,16,.18) 1.5px,transparent 1.5px);background-size:28px 28px;pointer-events:none;z-index:0}
+.hero-inner{position:relative;z-index:1}
+
+/* Hero badge glow ring */
+.hero-badge{box-shadow:0 0 0 4px rgba(245,197,24,.15),0 4px 20px rgba(201,160,16,.2) !important;border-color:rgba(245,197,24,.55) !important;letter-spacing:.5px}
+
+/* Hero search — luxury layered shadow */
+.hero-search{box-shadow:0 12px 56px rgba(200,160,0,.16),0 2px 8px rgba(245,197,24,.12),inset 0 1px 0 rgba(255,255,255,.9) !important;border-color:rgba(245,197,24,.35) !important}
+
+/* Heading refinements */
+.hero h1{letter-spacing:-.5px;text-shadow:0 2px 24px rgba(201,160,16,.08)}
+.section-title,.feat-title,#how-sec h2,.cta-band-title,.faq-sec h2{letter-spacing:-.2px}
+
+/* Stat values */
+.stat-val{font-size:1.9rem !important;text-shadow:0 2px 8px rgba(201,160,16,.22)}
+
+/* HSC icon double glow */
+.hsc-icon{box-shadow:0 4px 16px rgba(245,197,24,.38),0 0 0 4px rgba(245,197,24,.12) !important;transition:transform .3s,box-shadow .3s}
+.hsc:hover .hsc-icon{transform:scale(1.08);box-shadow:0 8px 24px rgba(245,197,24,.5),0 0 0 6px rgba(245,197,24,.15) !important}
+.hsc{transition:box-shadow .3s,transform .3s}
+.hsc:hover{transform:translateY(-3px);box-shadow:0 8px 32px rgba(200,160,0,.14) !important}
+
+/* Car cards — gold accent top bar on hover */
+.car-card{position:relative;overflow:hidden}
+.car-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--y),var(--yd),var(--y));background-size:200% 100%;opacity:0;transition:opacity .3s;z-index:2}
+.car-card:hover::before{opacity:1;animation:goldSlide 1.6s linear infinite}
+.car-card:hover{box-shadow:0 12px 48px rgba(200,160,0,.18),0 2px 8px rgba(245,197,24,.1) !important}
+@keyframes goldSlide{0%{background-position:0% 0}100%{background-position:200% 0}}
+
+/* Feature cards warm hover */
+.feat-card{transition:transform .3s,box-shadow .3s,background .3s}
+.feat-card:hover{background:linear-gradient(135deg,#fffde8 0%,#fff9d0 100%) !important;box-shadow:0 8px 36px rgba(200,160,0,.16) !important;transform:translateY(-4px)}
+
+/* Step number double-ring glow */
+.step-num{box-shadow:0 6px 20px rgba(245,197,24,.4),0 0 0 5px rgba(245,197,24,.12),0 0 0 10px rgba(245,197,24,.06) !important}
+.step{transition:transform .3s,box-shadow .3s;border-radius:16px;padding:16px}
+.step:hover{transform:translateY(-4px);background:rgba(255,249,208,.5);box-shadow:0 8px 28px rgba(200,160,0,.1)}
+
+/* CTA band */
+.cta-band-title{text-shadow:0 4px 16px rgba(201,160,16,.18)}
+.cta-band{box-shadow:inset 0 1px 0 rgba(255,255,255,.6),inset 0 -1px 0 rgba(201,160,16,.15)}
+
+/* Footer upgrade */
+footer{background:linear-gradient(135deg,#fffde8 0%,#fffbe0 50%,#fff8d0 100%) !important;border-top:1.5px solid rgba(201,160,16,.3) !important;box-shadow:0 -4px 24px rgba(200,160,0,.07)}
+
+/* FAQ premium hover */
+.faq-item{transition:background .25s,box-shadow .25s}
+.faq-item.open{background:linear-gradient(135deg,#fffde8,#fff9d0) !important;box-shadow:0 4px 20px rgba(200,160,0,.1)}
+.faq-q{transition:color .2s}
+.faq-item.open .faq-q{color:var(--yd)}
+
+/* Buttons — subtle shimmer on hover */
+.btn-primary{position:relative;overflow:hidden}
+.btn-primary::after{content:'';position:absolute;top:0;left:-100%;width:60%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.35),transparent);transition:left .5s}
+.btn-primary:hover::after{left:140%}
+
+/* Profile avatar ring glow */
+.profile-avatar{box-shadow:0 0 0 6px rgba(245,197,24,.14),0 8px 28px rgba(201,160,16,.22) !important}
+
+/* Booking card accent */
+.bk-id{letter-spacing:.4px}
 </style>
 </head>
 <body>
